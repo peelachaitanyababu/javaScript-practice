@@ -1,0 +1,13 @@
+let a = "chaithanya the developer";
+console.log(a.length);
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+console.log(a.charAt(1));
+console.log(a.slice(3, 7));
+console.log(a.substring(2, 12));
+console.log(a.trim());
+let b = "sulthan";
+console.log(a + b);
+console.log(a.replace("h", "t"));
+let h = "jai";
+console.log(h.repeat(5));
