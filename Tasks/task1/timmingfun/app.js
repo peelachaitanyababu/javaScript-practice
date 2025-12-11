@@ -37,3 +37,23 @@ function traffic() {
   setTimeout(traffic, 3000);
 }
 traffic();
+// Start a timeout
+const timeoutId = setTimeout(() => {
+  console.log("This will run after 5 seconds unless stopped.");
+  alert("Timeout finished!");
+}, 5000);
+
+// Stop the timeout when the button is clicked
+document.getElementById("click").addEventListener("click", () => {
+  clearTimeout(timeoutId);
+  console.log("Timeout canceled.");
+  alert("Timeout canceled!");
+});
+
+let val = 10;
+let val2 = document.getElementById("p");
+while (val != 0) {
+  val2.innerText += `${val} \n`;
+
+  val--;
+}
